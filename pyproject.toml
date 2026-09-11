@@ -1,0 +1,9 @@
+[project]
+name = "job-scout"
+version = "0.1.0"
+description = "Personal remote job discovery and ranking app"
+requires-python = ">=3.11"
+dependencies = ["fastapi[standard]", "sqlmodel", "python-dotenv", "httpx"]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
